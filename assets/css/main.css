@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* lading page perritos lindos */
+.landing_page img{
+    width: 100%;
+    margin-top: 152px;
+}
+/* boton contactanos del landing page */
+.btn-whatsapp{
+    display: inline-flex;
+}
+/* contenedor de la lista de lis perritos */
+.grid-container{
+    width: 100%;
+    margin: auto;
+    margin-top: 48px;
+}
+/* seccion de la clase de perritos */
+.perritos-grid{
+    width: 100%;
+    height: 55vh;
+    padding: 0 30px;
+    border-radius: 60px;
+}
+/* clase de cada uno de las imagenes */
+.grid-items{
+    margin: 5px;
+    text-align: center;
+}
+#container-grid .grid-container{
+    display: grid;
+}
+/* responsive landing page y contenedor de perritos */
+@media screen and (max-width: 1200px){
+    .landing_page img{
+        margin-top: 240px;
+    }
+    .perritos1{
+       grid-column: 1/2;
+       grid-row: 1;
+    }
+}
+@media(min-width:1024px) {
+    #container-grid .grid-container{
+        grid-template-columns: repeat(3,33.3%);
+    }
+}
+@media(max-width:1023px) {
+    #container-grid .grid-container{
+        grid-template-columns: repeat(3,33.3%);
+    }
+}
+@media screen and (max-width: 920px){
+    .landing_page img{
+        margin-top: 265px;
+    }
+}
+@media screen and (max-width: 768px){
+    .landing_page img{
+        margin-top: 163px;
+    }
+    #container-grid .grid-container{
+        grid-template-columns: repeat(2,50%);
+    }
+    .perritos-grid{
+        height: 55vh;
+    }
+}
+@media screen and (max-width: 540px){
+    .landing_page img{
+        height: 200px;
+    }
+    #container-grid .grid-container{
+        grid-template-columns: repeat(1,100%);
+    }
+    .perritos-grid{
+        width: 100%;
+        padding-top: 48px;
+        padding: 0 20px;
+    }
+}

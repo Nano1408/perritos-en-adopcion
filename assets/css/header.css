@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    background-color: #FFE383;
+    position: fixed;
+    z-index: 1;
+}
+.nav_menu{
+    text-align: center;
+}
+#logo{
+    text-align:center;
+    font-family: "Montserrat",Helvetica,sans-serif;
+    padding-top: 25px;
+}
+.logo_p{
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+/* icono burger */
+#logo > .burger{
+    font-size: 50px;
+    border: none;
+    background: none;
+    color: #541690;
+    cursor: pointer;
+    padding-left: 20px;
+    display: none;
+}
+#logo > .burger:active{
+    color: #ffffff;
+}
+/* opciones del header */
+#navega{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.navega_lista{
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+    padding-bottom: 17px;
+}
+.items{
+    list-style: none;
+    margin-left: 58px;
+}
+
+.btn_nav{
+    background-color: transparent;
+    border: none;
+    padding: 8px 19px 8px 19px;
+    border-radius: 10px;
+    color: #000;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 20px;
+    transition: 0.2s;
+    width: max-content;
+}
+.btn_nav:hover{
+    background-color: #541690;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn_nav:focus, .btn_nav:active{
+    background-color:#541690;
+    color: #fff;
+}
+/* boton de buscar */
+.buscar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    align-items: center;
+    background: #FF7070;
+    padding: 10px;
+    margin-left: 20px;
+    height: 50px;
+    border-radius: 40px;
+    transition: .3s;
+}
+/* input */
+.buscar_texto::placeholder{
+    color: rgba(0, 0, 0, 0.466);
+}
+.buscar_texto:focus::placeholder{
+    color: #fff;
+}
+.buscar_texto{
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 20px;
+    float: left;
+    line-height: 60px;
+    transition: .3s;
+    width: 0;
+}
+.btn_buscar{
+    width: 32px;
+    height: 38px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    transition: .3s;
+}
+.buscar:hover > .buscar_texto{
+    width: 100%;
+    transition: .3s;
+}
+
+@media screen and (max-width: 1200px) {
+    .items{
+        margin-left: 13px;
+    }
+    #navega{
+        flex-direction: column;
+    }
+    .navega_lista{
+        margin-right: 31px;
+        left: 0;
+    }
+    .buscar{
+        margin-left: 101px;
+        margin-right: 90px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .btn_nav{
+        inline-size: min-content;
+    }
+    .items{
+        margin-left: 13px;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* opciones del header */
+#navega{
+justify-content: center;
+}
+.navega_lista{
+    flex-direction: column;
+    margin-top: 290px;
+    width: 100%;
+    background-color: #FFE383;
+    position: absolute;
+    align-items: center;
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+}
+.navegar_lista_visible{
+    left: 0;
+}
+/* boton de buscar */
+.buscar{
+    align-content: center;
+    margin-left: 101px;
+    margin-right: 90px;
+}
+/* icono nav burger */
+#logo{
+    display: flex;
+    justify-content: space-around;
+}
+#logo > .burger{
+    display: flex;
+}
+.buscar{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* esto es para cuando tengamos un focus que no sea de forma visible que lo deje outline */
+.navega_lista:focus:not(:focus-visible){
+    outline: none;
+}
+}
