@@ -4,13 +4,37 @@
     box-sizing: border-box;
 }
 /* lading page perritos lindos */
-.landing_page img{
+.landing_page{
+    margin-top: 200px;
+}
+.container-landing, .img-landing-page{
     width: 100%;
-    margin-top: 152px;
+    float: left;
+    position: relative;
 }
 /* boton contactanos del landing page */
-.btn-whatsapp{
-    display: inline-flex;
+.btn-contact{
+    position: absolute;
+    top: calc(50% + 230px);
+    /* bottom: 10%; */
+    /* right: 76%; */
+    left: 19%;
+    font-family: "Akaya Kanadaka", Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* icono whatsapp */
+.fa-brands{
+    border-radius: 66px;
+}
+.fa-whatsapp-square{
+    color: rgb(10, 195, 10);
+    padding-right: 6px;
 }
 /* contenedor de la lista de lis perritos */
 .grid-container{
@@ -28,6 +52,7 @@
 /* clase de cada uno de las imagenes */
 .grid-items{
     margin: 5px;
+    margin-top: 29px;
     text-align: center;
 }
 #container-grid .grid-container{
@@ -35,8 +60,8 @@
 }
 /* responsive landing page y contenedor de perritos */
 @media screen and (max-width: 1200px){
-    .landing_page img{
-        margin-top: 240px;
+    .landing_page .img-landing-page{
+        margin-top: 87px;
     }
     .perritos1{
        grid-column: 1/2;
@@ -52,15 +77,22 @@
     #container-grid .grid-container{
         grid-template-columns: repeat(3,33.3%);
     }
+    .btn-contact{
+        top: calc(50% + 212px);
+        left: 16%;
+    }
 }
 @media screen and (max-width: 920px){
-    .landing_page img{
-        margin-top: 265px;
+    .landing_page .img-landing-page{
+        margin-top: 113px;
     }
 }
 @media screen and (max-width: 768px){
-    .landing_page img{
-        margin-top: 163px;
+    .landing_page .img-landing-page{
+        margin-top: 11px;
+    }
+    .landing_page {
+        margin-top: 190px;
     }
     #container-grid .grid-container{
         grid-template-columns: repeat(2,50%);
@@ -68,9 +100,14 @@
     .perritos-grid{
         height: 55vh;
     }
+    .btn-contact{
+        top: calc(50% + 151px);
+        left: 16%;
+        font-size: 11px;
+    }
 }
 @media screen and (max-width: 540px){
-    .landing_page img{
+    .landing_page .img-landing-page{
         height: 200px;
     }
     #container-grid .grid-container{

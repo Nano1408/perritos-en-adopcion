@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+#logo .logo_p img{
+    width: 80px;
+    height: 80px;
+}
 body{
     font-family: "Montserrat", Helvetica, sans-serif;
 }
@@ -11,6 +15,7 @@ header{
     background-color: #FFE383;
     position: fixed;
     z-index: 1;
+    top: 0;
 }
 .nav_menu{
     text-align: center;

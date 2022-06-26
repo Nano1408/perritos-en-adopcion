@@ -1,0 +1,216 @@
+#container-testimonio{
+    display: flex;
+    justify-content: center;
+}
+#logo .logo_p img{
+    width: 80px;
+    height: 80px;
+}
+#card-testimonio{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin-top: 340px;
+}
+.card-container{
+    max-width: 300px;
+    margin: 0 0 30px 50px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px 0px #00000036;
+}
+.card-container > .img-testimonio{
+    width: 100%;
+    height: 240px;
+    border-radius: 8px 8px 0px 0px;
+}
+.card-text .title-testimonio{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #53BF9D;
+    font-size: 14px;
+}
+.card-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 31px;
+    font-size: 15px;
+    font-family: 'Akaya kanadaka';
+}
+/* formulario testimonio */
+#form-testimonio{
+    margin-top: 314px;
+}
+.container-form{
+    background-color: #FF7070;
+     max-width: 595px;
+    border-radius: 57px;
+    margin-left: 27px;
+    margin-right: 27px;
+    text-align: center;
+}
+.text-form{
+    margin: 21px 70px 31px 70px;
+    font-family: 'Akaya Kanadaka', helvetica, sans-serif;
+    font-size: 36px;
+    color: #541690;
+}
+.form-input label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+}
+.form-input input{
+    width: 331px;
+    border-radius: 14px;
+    border: none;
+    height: 43px;
+    margin-bottom: 36px;
+}
+.form-input textarea{
+    width: 340px;
+    height: 180px;
+    border-radius: 14px;
+    border: none;
+    margin-bottom: 30px;
+}
+/* adjuntar foto */
+#upload-testimonio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.submit-adjunto{
+    position: relative;
+    width: 150px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+#adjunta-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.adj-text{
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+}
+.adj-text .fa-images{
+    margin-left: 5px;
+}
+#upload-testimonio .submit-upload{
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 66px;
+}
+.submit-upload > button {
+    background-color: #6A478B;
+    list-style: none;
+    border: none;
+    padding: 10px;
+    border-radius: 11px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+/* query responsive del formulario */
+@media screen and (max-width: 1024px){
+    .submit-upload > button {
+        font-size: 14px;
+    }
+    .adj-text {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 920px){
+    #container-testimonio{
+        display: block;
+        justify-content: center;
+    }
+    #card-testimonio {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        margin-top: 340px;
+        justify-items: center;
+    }
+    .container-form {
+        max-width: 595px;
+        margin-left: 15%;
+    }
+    #form-testimonio {
+        margin-top: 77px;
+    }
+    .card-container {
+        width: 280px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:768px){
+    #card-testimonio {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        margin-top: 280px;
+        justify-items: center;
+    }
+    .container-form {
+        max-width: 400px;
+        margin-left: 23%;
+        margin-right: 10%;
+    }
+    .text-form {
+        font-size: 25px;
+    }
+    .form-input label {
+        font-size: 15px;
+    }
+    .form-input input {
+        width: 240px;
+        height: 35px;
+    }
+    .form-input textarea {
+        width: 240px;
+        height: 140px;
+    }
+    #upload-testimonio .submit-upload {
+        padding: 10px;
+        margin-bottom: 5px;
+        margin-right: 40px;
+    }
+    .submit-upload > button {
+        padding: 8px;
+        font-size: 13px;
+    }
+    .card-container {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 400px){
+    .form-input textarea, .form-input input {
+        width: calc(100% - 40px);
+        overflow-x:hidden;
+    }
+    .text-form {
+        font-size: 20px;
+        margin: 0px 15px 31px 15px;
+        padding-top: 10px;
+    }
+    .card-container {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 400px){
+    .card-container {
+        width: 200px;
+        margin: 0 0 30px 0;
+    }
+    #form-testimonio {
+        margin-top: 77px;
+    }
+}
