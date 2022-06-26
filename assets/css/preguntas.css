@@ -46,6 +46,7 @@ details summary {
   font-weight: 400;
   font-size: 1.25rem;
   padding: 1rem;
+  padding-right: 3rem;
   cursor: pointer;
   list-style: none;
 }
@@ -126,7 +127,7 @@ details[open] summary::after {
     margin-bottom: 36px;
 }
 .form-input textarea{
-    width: 340px;
+    width: 310px;
     height: 180px;
     font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
     padding: 10px;
@@ -155,7 +156,7 @@ details[open] summary::after {
 @media screen and (max-width: 920px){
     #main-preguntas{
         display: block;
-        margin-top: 310px;
+        margin-top: 230px;
     }
     #card-testimonio {
         display: grid;
@@ -172,6 +173,9 @@ details[open] summary::after {
     }
 }
 @media screen and (max-width:768px){
+    #main-preguntas {
+        margin-top: 130px;
+    }
     .container-form {
         max-width: 400px;
         margin-left: 23%;

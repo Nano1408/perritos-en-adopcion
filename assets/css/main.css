@@ -48,7 +48,7 @@
 /* seccion de la clase de perritos */
 .perritos-grid{
     width: 100%;
-    height: 55vh;
+    height: 40vh;
     padding: 0 30px;
     border-radius: 60px;
     transition: 0.3s;
@@ -62,7 +62,7 @@
     overflow: hidden;
 }
 .grid-items a img:hover{
-    transform: scale(1.2);
+    transform: scale(1.03);
     transition: 0.3s;
     border-radius: 60px;
 }

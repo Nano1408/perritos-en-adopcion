@@ -145,13 +145,18 @@
     }
     .container-form {
         max-width: 595px;
-        margin-left: 15%;
+        margin-left: 20%;
     }
     #form-testimonio {
         margin-top: 455px;
     }
 }
 @media screen and (max-width:768px){
+    #main-preguntas {
+        display: block;
+        margin-top: 150px;
+        justify-content: center;
+    }
     #contacto{
         width: 400px;
         height: 130px;
@@ -160,7 +165,7 @@
     }
     .container-form {
         max-width: 400px;
-        margin-left: 10%;
+        margin-left: 20%;
         margin-right: 10%;
         width: auto;
     }
@@ -196,7 +201,7 @@
         overflow-x:hidden;
     }
     .container-form{
-        margin-top: 500px;
+        margin-top: 520px;
         margin-left: 27px;
         margin-right: 27px;
     }

@@ -152,12 +152,13 @@
     #card-testimonio {
         display: grid;
         grid-template-columns: repeat(2,50%);
-        margin-top: 340px;
+        margin-top: 260px;
         justify-items: center;
     }
     .container-form {
         max-width: 595px;
         margin-left: 15%;
+        margin-bottom: 100px;
     }
     #form-testimonio {
         margin-top: 77px;
@@ -171,12 +172,12 @@
     #card-testimonio {
         display: grid;
         grid-template-columns: repeat(1,100%);
-        margin-top: 280px;
+        margin-top: 140px;
         justify-items: center;
     }
     .container-form {
         max-width: 400px;
-        margin-left: 23%;
+        margin-left: 15%;
         margin-right: 10%;
     }
     .text-form {
@@ -222,7 +223,7 @@
 }
 @media screen and (max-width: 400px){
     .card-container {
-        width: 200px;
+        width: 300px;
         margin: 0 0 30px 0;
     }
     #form-testimonio {
