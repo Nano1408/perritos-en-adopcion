@@ -183,6 +183,7 @@ justify-content: center;
 }
 /* boton de buscar */
 .buscar{
+    z-index: 1;
     align-content: center;
     margin-left: 101px;
     margin-right: 90px;
