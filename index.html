@@ -4,51 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/logo-perrito.png">
     <!-- FUente de google Monserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat:ital,wght@0,100;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Perritos Lindos</title>
 </head>
 <body>
-    <header>
+  <!-- comiensa el encabezado -->
+     <header>
         <nav class="nav_menu">
-        <div id="logo">
-            <a href="#" class="logo_p">Logo</a>
-            <button class="burger" aria-label="Abrir menu"><i class="fa-solid fa-paw"></i></button>
-        </div>
-        <div id="navega">
-            <ul class="navega_lista">
-                <li class="items"><a href="#"><button class="btn_nav">Adoptame</button></a></li>
-                <li class="items"><a href="./testimony.html"><button class="btn_nav">Testimonio</button></a></li>
-                <li class="items"><a href="#"><button class="btn_nav">Preguntas Frecuentes</button></a></li>
-                <li class="items"><a href="#"><button class="btn_nav">Contacto</button></a></li>
-            </ul>
-            <div class="buscar">
-                <input type="search" class="buscar_texto" placeholder="Buscas perritos?">
-                <a href="#" class="btn_buscar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
+            <div id="logo">
+                <a href="#" class="logo_p"><img src="./assets/icons/logo-perrito.png" alt="Logo_perrito"></a>
+                <button class="burger" aria-label="Abrir menu"><i class="fa-solid fa-paw"></i></button>
             </div>
-        </div>
-    </nav>
-    </header>
+            <div id="navega">
+                <ul class="navega_lista">
+                    <li class="items"><a href="#"><button class="btn_nav">Adoptame</button></a></li>
+                    <li class="items"><a href="./testimony.html"><button class="btn_nav">Testimonio</button></a></li>
+                    <li class="items"><a href="./preguntas.html"><button class="btn_nav">Preguntas Frecuentes</button></a></li>
+                    <li class="items"><a href="./contacto.html"><button class="btn_nav">Contacto</button></a></li>
+                </ul>
+                <div class="buscar">
+                    <input type="search" class="buscar_texto" placeholder="Buscas perritos?">
+                    <a href="#" class="btn_buscar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+     </header>
+<!-- termina el encabezado -->
     <main>
         <!-- imagen landing page -->
-        <div class="landing_page">
-            <img src="./assets/img/landing-pages.jpg" alt="#perritos_lindos">
-            <a href="#"><i class="fa-brands fa-whatsapp-square"></i>Contactanos</a>
-        </div>
+        <section class="container-landing">
+            <div class="landing_page">
+                <img src="./assets/img/landing-pages.jpg" alt="#perritos_lindos" class="img-landing-page">
+                <a class="btn-contact" href="#"><i class="fa-brands fa-whatsapp-square"></i>Contactanos</a>
+            </div>
+        </section>
         <!-- contenido de perritos en grid de 3 columnas -->
         <section id="container-grid">
             <!-- contenedor grid -->
            <div class="grid-container">
                <article class="grid-items">
-                   <img class="perritos-grid" src="./assets/img/caniche_hembra.jpeg" alt="Cachorro_Siberiano_Lobo">
+                    <a target="_black" href="https://wa.me/573225735992?text=Me%20interesa,%20quiero%20adoptar%20un%20perrito">
+                      <img class="perritos-grid" src="./assets/img/caniche_hembra.jpeg" alt="Cachorro_Siberiano_Lobo">
+                    </a>
                    <h3>Caniche</h3>
                    <h4>8 Meses - Macho</h4>
                </article>

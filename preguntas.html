@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/logo-perrito.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat:ital,wght@0,100;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/preguntas.css">
+    <title>Preguntas frecuentes</title>
+</head>
+<body>
+ <!-- comiensa el encabezado -->
+ <header>
+    <nav class="nav_menu">
+        <div id="logo">
+            <a href="#" class="logo_p">
+                <img src="./assets/icons/logo-perrito.png" alt="Logo_perrito">
+            </a>
+            <button class="burger" aria-label="Abrir menu"><i class="fa-solid fa-paw"></i></button>
+        </div>
+        <div id="navega">
+            <ul class="navega_lista">
+                <li class="items"><a href="index.html"><button class="btn_nav">Adoptame</button></a></li>
+                <li class="items"><a href="testimony.html"><button class="btn_nav">Testimonio</button></a></li>
+                <li class="items"><a href="#"><button class="btn_nav">Preguntas Frecuentes</button></a></li>
+                <li class="items"><a href="./contacto.html"><button class="btn_nav">Contacto</button></a></li>
+            </ul>
+            <div class="buscar">
+                <input type="search" class="buscar_texto" placeholder="Buscas perritos?">
+                <a href="#" class="btn_buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- termina el encabezado -->
+<main id="main-preguntas">
+    <div class="faq-container">
+        <h2>detalles de preguntas frecuentes</h2>
+        <details open>
+           <summary>Como iniciar una adopcion 1,2 y 3?</summary>
+           <p>1.0 Para iniciar el trámite de adopción debemos buscar el centro de bienestar animal más cercano....</p>
+        </details>
+      
+        <details>
+          <summary>Con que frecuencia mi mascota debe visitar al veterinario?</summary>
+          <p>Tanto los perros como los gatos necesitan una buena y constante 
+            atención veterinaria. En caso de enfermedad o accidente, siempre 
+            debe acudirse a un profesional. No limite sus visitas a estos momentos, 
+            recuerde que es más económico prevenir, por lo tanto se recomienda 
+            programar una visita al veterinario mínimo una vez al año</p>
+        </details>
+        
+          <details>
+            <summary>Cuales son los requisitos para acceder a la adopción?</summary>
+            <p>Ser mayor de edad y presentar la cédula de ciudadanía al iniciar 
+            el proceso, además es esencial que todos los miembros de la 
+            familia estén de acuerdo con esta decisión.</p>
+          </details>
+        
+        <details>
+          <summary>Cada cuanto debo desparacitar a mi masconta?</summary>
+          <p>Existen varios esquemas para desparasitar perros y gatos.
+            Uno de ellos se debe iniciar a los 15 días de vida y 
+            repetir de forma periódica, cada 15 días, hasta que nuestra 
+            mascota cumpla los 3 meses de edad.
+            Posterior a ello, el proceso debe repetirse una vez al mes 
+            hasta que cumpla los 6 meses. Y finalmente, cada 3 a 6 meses 
+            por el resto de su vida, según las características propias de cada animal.
+            El esquema de desparasitación interna que incluye fechas, 
+            intervalos, dosis y productos, son responsabilidad del médico veterinario.
+            Absténgase de preguntar recomendaciones en tiendas agropecuarias 
+            o consultar vía internet.
+            Su animal de compañía requiere siempre de atención profesional para 
+            evitar futuras enfermedades por mala administración de medicamentos.</p>
+        </details>
+        
+        <details>
+          <summary>Cada cuanto debo vacunar a mi mascota?</summary>
+          <p>Para comenzar el esquema de vacunación de su mascota, siempre 
+            debe consultar con el médico veterinario elegido. Él evaluará 
+            las condiciones de salud de su animal de compañía y le indicará 
+            el mejor plan de vacunación.
+            Recuerde que en la edad adulta, los animales deben ser vacunados 
+            una vez al año
+            Te aconsejamos hacer siempre la vacunación anual el mismo mes, 
+            para facilitar la recordación de la misma.</p>
+        </details>
+        <details>
+          <summary>Cual es el funcionamiento del microship?</summary>
+          <p>Este pequeño dispositivo de identificación que se implanta 
+            bajo la piel del animal, permite certificar la titularidad 
+            del propietario. No es un dispositivo de rastreo.</p>
+        </details>
+    </div>
+        <!-- termina tarjetas seccion de testimonio -->
+        <section id="form-testimonio">
+            <form class="container-form">
+                <div class="text-form">
+                    <h3>Cuentanos tus dudas!</h3>
+                </div>
+                <div class="form-input">
+                   <label for="microship">Nombre Completo*</label>
+                   <input type="text" name="nombre" id="nombre">
+                   <label for="correo">Correo*</label>
+                   <input type="email" name="email" id="email">
+                   <label for="testimonio">Preguntas*¿?</label>
+                   <textarea name="pregunta" id="testimonio" cols="30" rows="10"></textarea>
+                </div>
+                <div id="upload-testimonio">
+                    <div class="submit-upload">
+                        <button type="submit">Enviar Duda</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+</main>   
+    <!-- pie de pagina -->
+    <footer>
+        <div class="footer">
+            <div class="copyrigth">
+                <p class="copyrigth">copyrigth© by Fernando Pérez</p>
+            </div>
+            <!-- redes sociales -->
+            <div class="redes-sociales">
+                <a class="facebook" target="_black" href="https://www.facebook.com/fernando.pf.3956/">
+                    <img class="icons-social" src="./assets/icons/facebook.png" alt="facebook/fernandoperez">
+                </a>
+                <!-- instagram -->
+                <a class="instagram" target="_black" href="https://www.instagram.com/ferna14081/">
+                    <img class="icons-social" src="./assets/icons/instagram.png" alt="instagram/fernandoperez">
+                </a>
+                <!-- twiter -->
+                <a class="twitter" target="_black" href="https://twitter.com/Ferna1408">
+                    <img class="icons-social" src="./assets/icons/twitter.png" alt="twiter/fernandoperez">
+                </a>
+                <!-- youtube -->
+                <a class="youtube" target="_black" href="https://www.youtube.com/channel/UCLSNjqgHe9ImBEzye-8o01A">
+                    <img class="icons-social" src="./assets/icons/youtube.png" alt="youtube/fernandoperez">
+                </a>
+            </div>
+            <div class="direccion">
+                <a class="map" target="_black" href="https://www.google.es/maps/place/Cra.+53a+%2343-151,+Medell%C3%ADn,+La+Candelaria,+Medell%C3%ADn,+Antioquia/@6.2446445,-75.5766329,17z/data=!3m1!4b1!4m5!3m4!1s0x8e44295c91ea93d5:0xb515a2b6880494de!8m2!3d6.2446445!4d-75.5744442?hl=es">
+                    <p>Carrera 53a #43 161 piso 7</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+      <!-- Script y funciones -->
+      <script defer src="./assets/js/index.js"></script>
+      <script src="./assets/js/preguntas.js"></script>
+      <!-- script iconos importados -->
+      <script src="https://kit.fontawesome.com/5c240fad6e.js" crossorigin="anonymous"></script>
+</body>
+</html>

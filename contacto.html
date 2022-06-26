@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/logo-perrito.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat:ital,wght@0,100;0,500;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+ <!-- comiensa el encabezado -->
+<header>
+    <nav class="nav_menu">
+        <div id="logo">
+            <a href="#" class="logo_p">
+                <img src="./assets/icons/logo-perrito.png" alt="Logo_perrito">
+            </a>
+            <button class="burger" aria-label="Abrir menu"><i class="fa-solid fa-paw"></i></button>
+        </div>
+        <div id="navega">
+            <ul class="navega_lista">
+                <li class="items"><a href="index.html"><button class="btn_nav">Adoptame</button></a></li>
+                <li class="items"><a href="testimony.html"><button class="btn_nav">Testimonio</button></a></li>
+                <li class="items"><a href="./preguntas.html"><button class="btn_nav">Preguntas Frecuentes</button></a></li>
+                <li class="items"><a href="#"><button class="btn_nav">Contacto</button></a></li>
+            </ul>
+            <div class="buscar">
+                <input type="search" class="buscar_texto" placeholder="Buscas perritos?">
+                <a href="#" class="btn_buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- termina el encabezado -->
+<main id="main-preguntas">
+    <Section id="contacto">
+        <div class="horarios">
+            <div class="L-V">
+                <h3>Lunes - Viernes</h3>
+                <p>9am - 6pm</p>
+            </div>
+            <hr>
+            <div class="S">
+                <h3>Sabados</h3>
+                <p>9am - 2pm</p>
+            </div>
+        </div>
+        <!-- ubicacion -->
+        <div class="div-direccion">
+            <h3>Ubicación</h3>
+            <div class="correo">
+                <p>contacto@tucachorro.com</p>
+            </div>
+            <div class="text-direccion">
+                <p>Cra 53a #43 161 - Medellín - Antioquia</p>
+            </div>
+        </div>
+        <div class="asesoria">
+            <h3>Recibe asesoria</h3>
+            <div class="contact-whatsapp">
+                <a target="_black" href="https://wa.me/573225735992?text=Me%20interesa,%20quiero%20adoptar%20un%20perrito">
+                   <img src="./assets/icons/icon-whatsapp.png" alt="">
+                </a>
+            </div>
+        </div>
+    </Section>
+    <!-- formulario -->
+    <section id="form-testimonio">
+        <form class="container-form">
+            <div class="text-form">
+                <h3>Contactanos</h3>
+            </div>
+            <div class="form-input">
+               <label for="microship">Nombre Completo*</label>
+               <input type="text" name="nombre" id="nombre">
+               <label for="correo">Correo*</label>
+               <input type="email" name="email" id="email">
+               <label for="testimonio">Mensaje*</label>
+               <textarea name="pregunta" id="testimonio" cols="30" rows="10"></textarea>
+            </div>
+            <div id="upload-testimonio">
+                <div class="submit-upload">
+                    <button type="submit">Enviar Mensaje</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>   
+    <!-- pie de pagina -->
+    <footer>
+        <div class="footer">
+            <div class="copyrigth">
+                <p class="copyrigth">copyrigth© by Fernando Pérez</p>
+            </div>
+            <!-- redes sociales -->
+            <div class="redes-sociales">
+                <a class="facebook" target="_black" href="https://www.facebook.com/fernando.pf.3956/">
+                    <img class="icons-social" src="./assets/icons/facebook.png" alt="facebook/fernandoperez">
+                </a>
+                <!-- instagram -->
+                <a class="instagram" target="_black" href="https://www.instagram.com/ferna14081/">
+                    <img class="icons-social" src="./assets/icons/instagram.png" alt="instagram/fernandoperez">
+                </a>
+                <!-- twiter -->
+                <a class="twitter" target="_black" href="https://twitter.com/Ferna1408">
+                    <img class="icons-social" src="./assets/icons/twitter.png" alt="twiter/fernandoperez">
+                </a>
+                <!-- youtube -->
+                <a class="youtube" target="_black" href="https://www.youtube.com/channel/UCLSNjqgHe9ImBEzye-8o01A">
+                    <img class="icons-social" src="./assets/icons/youtube.png" alt="youtube/fernandoperez">
+                </a>
+            </div>
+            <div class="direccion">
+                <a class="map" target="_black" href="https://www.google.es/maps/place/Cra.+53a+%2343-151,+Medell%C3%ADn,+La+Candelaria,+Medell%C3%ADn,+Antioquia/@6.2446445,-75.5766329,17z/data=!3m1!4b1!4m5!3m4!1s0x8e44295c91ea93d5:0xb515a2b6880494de!8m2!3d6.2446445!4d-75.5744442?hl=es">
+                    <p>Carrera 53a #43 161 piso 7</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+      <!-- Script y funciones -->
+      <script defer src="./assets/js/index.js"></script>
+      <script src="./assets/js/preguntas.js"></script>
+      <!-- script iconos importados -->
+      <script src="https://kit.fontawesome.com/5c240fad6e.js" crossorigin="anonymous"></script>   
+</body>
+</html>
