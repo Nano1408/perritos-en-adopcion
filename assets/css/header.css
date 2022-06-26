@@ -6,6 +6,11 @@
 #logo .logo_p img{
     width: 80px;
     height: 80px;
+    transition: .3s;
+}
+#logo .logo_p img:hover{
+    transform: scale(1.7);
+    transition: .3s;
 }
 body{
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -95,6 +100,10 @@ header{
     margin-left: 20px;
     height: 50px;
     border-radius: 40px;
+    transition: .3s;
+}
+.buscar input:focus {
+    width: 100%;
     transition: .3s;
 }
 /* input */

@@ -16,8 +16,6 @@
 .btn-contact{
     position: absolute;
     top: calc(50% + 230px);
-    /* bottom: 10%; */
-    /* right: 76%; */
     left: 19%;
     font-family: "Akaya Kanadaka", Helvetica, sans-serif;
     font-size: 1.6em;
@@ -27,6 +25,11 @@
     background-color: blueviolet;
     padding: 10px;
     border-radius: 10px;
+}
+.btn-contact:hover{
+    color: #fff;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 /* icono whatsapp */
 .fa-brands{
@@ -48,12 +51,20 @@
     height: 55vh;
     padding: 0 30px;
     border-radius: 60px;
+    transition: 0.3s;
 }
 /* clase de cada uno de las imagenes */
 .grid-items{
     margin: 5px;
     margin-top: 29px;
     text-align: center;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.grid-items a img:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    border-radius: 60px;
 }
 #container-grid .grid-container{
     display: grid;

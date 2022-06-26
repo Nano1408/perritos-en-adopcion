@@ -7,6 +7,11 @@ body {
 #logo .logo_p img{
     width: 80px;
     height: 80px;
+    transition: .3s;
+}
+#logo .logo_p img:hover{
+    transform: scale(1.7);
+    transition: .3s;
 }
 #main-preguntas{
     display: flex;
@@ -112,6 +117,9 @@ details[open] summary::after {
 }
 .form-input input{
     width: 331px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 17px;
     border-radius: 14px;
     border: none;
     height: 43px;
@@ -120,6 +128,9 @@ details[open] summary::after {
 .form-input textarea{
     width: 340px;
     height: 180px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 17px;
     border-radius: 14px;
     border: none;
     margin-bottom: 30px;

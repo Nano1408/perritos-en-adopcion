@@ -5,6 +5,11 @@
 #logo .logo_p img{
     width: 80px;
     height: 80px;
+    transition: .3s;
+}
+#logo .logo_p img:hover{
+    transform: scale(1.7);
+    transition: .3s;
 }
 #card-testimonio{
     display: grid;
@@ -16,6 +21,10 @@
     margin: 0 0 30px 50px;
     border-radius: 8px;
     box-shadow: 1px 1px 6px 0px #00000036;
+}
+.card-container:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
 }
 .card-container > .img-testimonio{
     width: 100%;
@@ -61,6 +70,9 @@
 }
 .form-input input{
     width: 331px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 17px;
     border-radius: 14px;
     border: none;
     height: 43px;
@@ -69,6 +81,9 @@
 .form-input textarea{
     width: 340px;
     height: 180px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 17px;
     border-radius: 14px;
     border: none;
     margin-bottom: 30px;

@@ -23,7 +23,7 @@
 }
 #contacto > .horarios > .L-V, .S{
     margin-top: 11px;
-    margin-bottom: 8px;
+    margin-bottom: 8.1px;
 }
 /* direccion y correo */
 .div-direccion{
@@ -54,6 +54,12 @@
     width: 126px;
     height: 126px;
     border-radius: 50%;
+    transition: .3s;
+}
+.asesoria .contact-whatsapp img:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 1px 1px 20px 0px #000;
 }
 /* **************************************************** */
 /* formulario testimonio */
@@ -79,6 +85,9 @@
 }
 .form-input input{
     width: 331px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 17px;
     border-radius: 14px;
     border: none;
     height: 43px;
@@ -87,6 +96,9 @@
 .form-input textarea{
     width: 340px;
     height: 180px;
+    font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 17px;
     border-radius: 14px;
     border: none;
     margin-bottom: 30px;
@@ -101,6 +113,12 @@
     font-family: 'Akaya Kanadaka', Helvetica, sans-serif;
     font-size: 20px;
     color: #FFFFFF;
+    cursor: pointer;
+}
+.submit-upload button:hover {
+    transform: scale(1.03);
+    transition: .3s;
+    background-color: #a451f1;
 }
 /* query responsive del formulario */
 @media screen and (max-width: 1024px){
