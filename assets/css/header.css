@@ -23,6 +23,8 @@ header{
     top: 0;
 }
 .nav_menu{
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 #logo{
@@ -163,6 +165,12 @@ header{
     }
 }
 @media screen and (max-width: 768px) {
+    .logo_p {
+        display: none;
+    }
+    .nav_menu {
+        justify-content:space-between;
+    }
     /* opciones del header */
 #navega{
 justify-content: center;
@@ -179,6 +187,7 @@ justify-content: center;
     transition: left 0.3s;
 }
 .navegar_lista_visible{
+    margin-top: 318px;
     left: 0;
 }
 /* boton de buscar */

@@ -5,7 +5,7 @@
 }
 /* lading page perritos lindos */
 .landing_page{
-    margin-top: 200px;
+    margin-top: 110px;
 }
 .container-landing, .img-landing-page{
     width: 100%;
@@ -15,8 +15,8 @@
 /* boton contactanos del landing page */
 .btn-contact{
     position: absolute;
-    top: calc(50% + 230px);
-    left: 19%;
+    top: calc(50% + 160px);
+    left: 15%;
     font-family: "Akaya Kanadaka", Helvetica, sans-serif;
     font-size: 1.6em;
     font-weight: 400;
@@ -71,9 +71,12 @@
 }
 /* responsive landing page y contenedor de perritos */
 @media screen and (max-width: 1200px){
-    .landing_page .img-landing-page{
-        margin-top: 87px;
+    .landing_page{
+        margin-top: 174px;
     }
+    /* .landing_page .img-landing-page{
+        margin-top: 87px;
+    } */
     .perritos1{
        grid-column: 1/2;
        grid-row: 1;
@@ -88,14 +91,14 @@
     #container-grid .grid-container{
         grid-template-columns: repeat(3,33.3%);
     }
-    .btn-contact{
+    /* .btn-contact{
         top: calc(50% + 212px);
         left: 16%;
-    }
+    } */
 }
 @media screen and (max-width: 920px){
     .landing_page .img-landing-page{
-        margin-top: 113px;
+        margin-top: 24px;
     }
 }
 @media screen and (max-width: 768px){
@@ -103,7 +106,7 @@
         margin-top: 11px;
     }
     .landing_page {
-        margin-top: 190px;
+        margin-top: 77px;
     }
     #container-grid .grid-container{
         grid-template-columns: repeat(2,50%);
@@ -112,7 +115,7 @@
         height: 55vh;
     }
     .btn-contact{
-        top: calc(50% + 151px);
+        top: calc(50% + 104px);
         left: 16%;
         font-size: 11px;
     }
